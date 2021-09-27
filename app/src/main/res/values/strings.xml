@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BruinNews</string>
+    <string name="title_home">USNews</string>
+    <string name="title_save">Bookmarks</string>
+    <string name="title_search">Search UCLA</string>
+    <string name="title_details">Details</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.zanzan.bruinnews.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navigation_save"
+        android:name="com.zanzan.bruinnews.ui.save.SaveFragment"
+        android:label="@string/title_save"
+        tools:layout="@layout/fragment_save">
+        <action
+            android:id="@+id/action_navigation_save_to_navigation_details"
+            app:destination="@id/navigation_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.zanzan.bruinnews.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_navigation_search_to_navigation_details"
+            app:destination="@id/navigation_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_details"
+        android:name="com.zanzan.bruinnews.ui.details.DetailsFragment"
+        android:label="@string/title_details"
+        tools:layout="@layout/fragment_details">
+        <argument
+            android:name="article"
+            app:argType="com.zanzan.bruinnews.model.Article" />
+    </fragment>
+
+</navigation>

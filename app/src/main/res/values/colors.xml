@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lighter_blue">#8BB8E8</color>
+    <color name="ucla_blue">#2774AE</color>
+    <color name="darkest_blue">#003B5C</color>
+    <color name="darker_gold">#FFC72C</color>
+    <color name="darkest_gold">#FFB81C</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
